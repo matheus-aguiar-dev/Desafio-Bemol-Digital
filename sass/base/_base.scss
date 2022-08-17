@@ -1,0 +1,18 @@
+*, *::after,*::before{
+     box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--on-background);
+    font-family: Comfortaa, sans-serif; 
+    background-color: #0a192f;
+    background-image: url("../assets/bemoldigital.png");
+    background-size: 100px 100px;
+    overflow-x: hidden;
+}

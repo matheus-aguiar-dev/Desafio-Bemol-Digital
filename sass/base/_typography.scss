@@ -1,0 +1,10 @@
+/**
+ * Basic typography style for copy text
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+ body {
+    color: $text-color;
+    font: normal 125% / 1.4 ;
+    font-family: Sen, sans-serif;
+  }

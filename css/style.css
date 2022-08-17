@@ -1,5 +1,186 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--on-background);
+  font-family: Comfortaa, sans-serif;
+  background-color: #0a192f;
+  background-image: url("../assets/bemoldigital.png");
+  background-size: 100px 100px;
+  overflow-x: hidden; }
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: #000;
+  font: normal 125% / 1.4;
+  font-family: Sen, sans-serif; }
+
+nav {
+  padding: 15px 40px;
+  height: 80px;
+  background-color: #282a37;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 3;
+  transition: .5s ease-in; }
+  nav .iconify {
+    position: absolute;
+    z-index: 4;
+    width: 50px;
+    height: 55px; }
+    nav .iconify:hover {
+      cursor: pointer; }
+  nav .middle-nav-list {
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    position: relative; }
+    nav .middle-nav-list .toggle {
+      position: absolute;
+      right: 0;
+      top: 2px;
+      right: -15px;
+      width: 50px;
+      height: 50px;
+      background-color: #282a37;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 10px;
+      display: none;
+      overflow: hidden;
+      cursor: pointer; }
+      nav .middle-nav-list .toggle span {
+        position: absolute;
+        top: 25px;
+        width: 30px;
+        right: 10px;
+        height: 4px;
+        background: #14FFEC;
+        border-radius: 4px;
+        transition: 0.5s; }
+        nav .middle-nav-list .toggle span:nth-child(1) {
+          transform: translateY(-10px);
+          width: 20px;
+          right: 10px; }
+        nav .middle-nav-list .toggle span:nth-child(2) {
+          transform: translateY(10px);
+          width: 15px;
+          right: 10px; }
+      nav .middle-nav-list .toggle.active span:nth-child(3) {
+        transform: translateX(60px); }
+      nav .middle-nav-list .toggle.active span:nth-child(2) {
+        transform: translateY(0px) rotate(60deg);
+        width: 30px; }
+      nav .middle-nav-list .toggle.active span:nth-child(1) {
+        width: 30px;
+        transform: translateY(0px) rotate(-60deg); }
+  nav .navigation-items {
+    display: inline-block;
+    line-height: 20px; }
+    nav .navigation-items li {
+      display: inline-block;
+      padding: 3px 4px; }
+  nav .right-nav-list {
+    position: absolute;
+    right: 0;
+    top: 20px; }
+
+@media only screen and (max-width: 860px) {
+  nav {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background-color: black;
+    z-index: 2;
+    font-size: 1.5rem; }
+    nav .middle-nav-list .navigation-items {
+      display: none;
+      padding: 25vh 0;
+      margin: 0;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      left: 0;
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.05); }
+      nav .middle-nav-list .navigation-items li {
+        display: block;
+        width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        border: solid 0.5px #14FFEC;
+        border-radius: 30px;
+        background: black;
+        margin: 50px auto; }
+      nav .middle-nav-list .navigation-items.active {
+        display: inline-block; }
+    nav .middle-nav-list .right-nav-list {
+      right: 50px;
+      top: 12px; }
+    nav .middle-nav-list .toggle {
+      display: block !important; } }
+
+.interface {
+  margin: 5% auto;
+  width: 100%;
+  max-width: 480px;
+  height: 700px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.4); }
+  .interface h1 {
+    letter-spacing: 2px; }
+  .interface .formulario {
+    width: 90%; }
+    .interface .formulario-info {
+      height: 65px;
+      margin-bottom: 5px; }
+    .interface .formulario label {
+      position: relative;
+      bottom: 3px; }
+    .interface .formulario input {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      outline: none;
+      transition: all 0.3s; }
+      .interface .formulario input:valid {
+        border: 1px solid green; }
+      .interface .formulario input:invalid {
+        border: 1px solid red; }
+    .interface .formulario button {
+      cursor: pointer;
+      color: white;
+      background: black;
+      border: none;
+      border-radius: 5px;
+      height: 50px;
+      width: 100%;
+      font-family: Sen, sans-serif;
+      font-size: 20px;
+      letter-spacing: 2px; }
+      .interface .formulario button:hover {
+        filter: brightness(200%);
+        background: #161616; }
+      .interface .formulario button:focus {
+        outline: none; }
+  .interface .image-container {
+    position: relative; }
+    .interface .image-container img {
+      display: block;
+      width: 100px;
+      height: 80px;
+      margin: 0 auto; }
