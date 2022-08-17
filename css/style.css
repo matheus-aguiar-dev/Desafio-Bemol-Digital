@@ -131,8 +131,7 @@ nav {
 .interface {
   margin: 5% auto;
   width: 100%;
-  max-width: 480px;
-  height: 700px;
+  max-width: 500px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -146,20 +145,35 @@ nav {
     .interface .formulario-info {
       height: 65px;
       margin-bottom: 5px; }
-    .interface .formulario label {
+      .interface .formulario-info label {
+        position: relative;
+        bottom: 3px; }
+      .interface .formulario-info input {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        outline: none;
+        transition: all 0.3s; }
+        .interface .formulario-info input:valid {
+          border: 1px solid green; }
+        .interface .formulario-info input:invalid {
+          border: 1px solid red; }
+    .interface .formulario-cep label {
       position: relative;
-      bottom: 3px; }
-    .interface .formulario input {
-      width: 100%;
+      bottom: 3px;
+      margin: 3px 2px; }
+    .interface .formulario-cep input {
       height: 40px;
       padding: 10px;
       border: 1px solid black;
       border-radius: 5px;
       outline: none;
       transition: all 0.3s; }
-      .interface .formulario input:valid {
+      .interface .formulario-cep input:valid {
         border: 1px solid green; }
-      .interface .formulario input:invalid {
+      .interface .formulario-cep input:invalid {
         border: 1px solid red; }
     .interface .formulario button {
       cursor: pointer;
