@@ -1,5 +1,5 @@
 .interface{
-  margin: 5% auto;
+  margin: 2% auto;
   width: 100%;
   max-width: 500px;
   background-color: white;
@@ -77,13 +77,39 @@
       }
     }
   }
-  .image-container{
-    position: relative;
-    img{
-      display: block;
-      width: 100px;
-      height: 80px;
-      margin: 0 auto;
+  .message-container {
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: red;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .formulario-cep{
+    label{
+      position: relative;
+      bottom: 3px;
+      margin: 5px 0;
+    }
+    input {
+      margin: 5px 0;
+      height: 40px;
+      padding: 10px;
+      width: 100%;
+      border: 1px solid black;
+      border-radius: 5px;
+      outline: none;
+      transition:  all 0.3s;
+      &:valid{
+        border: 1px solid green;
+      }
+      &:invalid{
+        border: 1px solid red
+      }
     }
   }
 }

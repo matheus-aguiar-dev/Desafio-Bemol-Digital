@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico?">
     <link rel="stylesheet" href="css/style.css">
     <title>Formulário Bemol - Digital</title>
 </head>
@@ -17,11 +17,11 @@
             </div>
             <div class="formulario-info">
                 <label for="cpf"> CPF</label> 
-                <input type="text" id="cpf"  placeholder="123.234.345.47" required  pattern="\d{11}" \> 
+                <input type="text" id="cpf"  placeholder="123.234.345.47" required  pattern="\d{11}" title="Apenas números sem espaços"\> 
             </div>
             <div class="formulario-info">
                 <label for="celular"> Celular</label>
-                <input type="text" id="celular"  placeholder="92 984743963" required pattern="\d{11}"> 
+                <input type="text" id="celular"  placeholder="92984743963" required pattern="\d{11}" title="Apenas números sem espaços"> 
             </div>
             <div class="formulario-info">
                 <label for="email"> E-mail</label>
@@ -29,7 +29,7 @@
             </div>
             <div class="formulario-info">
                 <label for="cep"> CEP</label>
-                <input type="text" id="cep"  placeholder="12345-67" required> 
+                <input type="text" id="cep"  placeholder="12345-67" required title="Apenas números sem espaços">  
             </div>
             <div class="formulario-cep">
                 <label for="rua"> Rua</label>
@@ -43,10 +43,12 @@
             </div>
             <div class="formulario-info">
                 <label for="contrasenha"> Repita a senha</label>
-                <input type="password" id="senha2"   required> 
+                <input type="password" id="senha2" required> 
             </div>
             <button type="submit">registre-se</button>
-            <h1>status</h1>
+            <div class="message-container">
+                <h3 id="message">Preencha os campos em vermelho!</h3>
+            </div>        
         </form>
     </div>
     <script src="js/script.js"></script>
