@@ -1,0 +1,23 @@
+1. A solução deve ser disponibilizada em Cloud ou On-premise? 
+Resposta: Cloud, devido a maior escalabidade do projeto e custo benefício. 
+
+
+
+2. Considerando a participação de 4 pessoas técnicas para o desenvolvimento dessa solução, responda qual ferramenta acreditas ser apropriada para o controle de tarefas da equipe, a ferramenta é ágil? 
+Resposta: Trello seria perfeito, ainda mais que se trata de uma equipe pequena.
+
+
+
+3. Você se sente capaz de liderar esta equipe? Por quê? 
+Resposta: Não. No momento atual possuo pouca experiência, porém tenho confiança no meu amadurecimento profissional conforme o tempo for passando. Mas dependendo da equipe e da comunicação, acredito que seria possível liderar.
+
+
+
+4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que seria? 
+Resposta: Achei interessante o desafio ser muito abrangente, porém acredito que por ter muita liberdade seria interessante ter uma pessoa direta caso houvesse alguma dúvida.
+
+
+
+
+5. Acha válido esse desafio para o processo que está participando?
+Resposta: Sim, ao mesmo tempo que é um problema interessante e recorrente foi super divertido de implementar.
