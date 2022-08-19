@@ -12,6 +12,7 @@ Desafio Técnico solicitado pela Bemol Digital para o cargo de Software Engineer
   
   O motivo da escolha dessas ferramentas foi devido a praticidade e a acessibilidade. Pois acredito que seja bem mais direto, preciso e facil de ler sem o uso de algum framework. Já em relação a acessibilidade, não é necessário nenhuma instalação para verificar a funcionalidade do código. O site está disponível para visualização em : https://matheus-aguiar-dev.github.io/Desafio-Bemol-Digital/
 </p>
+
 # C4 Diagrams
 
 
